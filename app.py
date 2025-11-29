@@ -2,8 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 
 # Page configuration
-st.title("🤖 My Gemini AI App")
-st.write("Ask me anything about embedded systems, WiFi, or anything else!")
+st.title("🤖 AI App based on Gemini 2.5- Embedded Q&A")
+st.write("Ask anything about embedded systems, WiFi, or anything else!")
 
 # Get API key from Streamlit secrets
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
