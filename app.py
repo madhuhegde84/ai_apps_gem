@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Page configuration
-st.set_page_config(page_title="Embedded Architect Interviewer", page_icon="🤖")
+
 st.title("🤖 Interview Prep Guide: Embedded Systems (Experience proffessionals)")
 st.markdown("""
 This app acts as a **Technical Interviewer** from a top semiconductor company. 
@@ -16,6 +16,7 @@ It generates advanced questions, architectural patterns, and nuances for experie
 4. Content derived only from authentic books and interviews
 5. ARM architecture support for the mentioned context
 """)
+
 
 # Get API key from Streamlit secrets
 if "GEMINI_API_KEY" in st.secrets:
@@ -84,3 +85,4 @@ if st.button("Generate Interview Context"):
                 st.error(f"An error occurred: {e}")
     else:
         st.warning("Please enter a concept topic first!")
+
