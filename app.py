@@ -2,8 +2,14 @@ import streamlit as st
 import google.generativeai as genai
 
 # Page configuration
-st.set_page_config(layout="wide")
-st.title("🤖 Interview Guide: Embedded Systems (Senior Professionals)")
+# Use HTML to manually set the style. 
+# 'white-space: nowrap' prevents wrapping.
+# 'font-size' adjusts the size to make it fit.
+st.markdown("""
+    <h1 style='text-align: center; font-size: 36px; white-space: nowrap;'>
+        🤖 Interview Guide: Embedded Systems (Senior Professionals)
+    </h1>
+    """, unsafe_allow_html=True)
 st.caption(f"Developed by [Madhu Hegde] {chr(0x00A9)} 2025")
 st.markdown("""
 This app acts as a **Technical Interviewer** from a top semiconductor company. 
