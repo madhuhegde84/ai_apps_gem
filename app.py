@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Page configuration
-
+st.set_page_config(layout="wide")
 st.title("🤖 Interview Guide: Embedded Systems (Senior Professionals)")
 st.caption(f"Developed by [Madhu Hegde] {chr(0x00A9)} 2025")
 st.markdown("""
