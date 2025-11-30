@@ -71,7 +71,7 @@ Output Format (Strictly follow these headers):
 
 user_topic = st.text_area("Enter an embedded concept (e.g., 'Spinlocks', 'DMA', 'ISR'):", height=100)
 
-num_iterations = st.slider("How many expert iterations?", min_value=1, max_value=5, value=3)
+num_iterations = st.slider("How many expert iterations?", min_value=1, max_value=5, value=1)
 
 def pick_best(responses):
     # Example: pick longest, but refine as needed
