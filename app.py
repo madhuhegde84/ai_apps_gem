@@ -10,15 +10,15 @@ st.markdown("""
         🤖 Interview Guide: Embedded Systems (Senior Professionals)
     </h1>
     """, unsafe_allow_html=True)
-st.caption(f"Developed by [Madhu Hegde] {chr(0x00A9)} 2025")
+st.caption(f"Developed by Madhu Hegde {chr(0x00A9)} 2025")
 st.markdown("""
 This app acts as a **Technical Interviewer** from a top semiconductor company. 
 
-It generates advanced questions, architectural patterns, and nuances for experienced engineers (typically **15+ years**, e.g., Principal/Staff).
+It generates advanced description, architectural patterns, and nuances for experienced engineers (typically **15+ years**, e.g., Principal/Staff Engineers).
 
 **Key Sections:**
-1. Connections to design patterns
-2. System design questions
+1. Connections to design patterns & System design questions
+2. Adavnced description typically for senior professionals 
 3. Code snippets and examples from top RTOS & Linux
 4. Content derived only from authentic books and interviews
 5. ARM architecture support for the mentioned context
