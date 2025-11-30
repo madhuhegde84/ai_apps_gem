@@ -69,27 +69,30 @@ Output Format (Strictly follow these headers):
    - Suggest advanced chapters from renowned books or specific IEEE standards or research papers.
 """
 
-# User input
 user_topic = st.text_area("Enter an embedded concept (e.g., 'Spinlocks', 'DMA', 'ISR'):", height=100)
 
-# Generate button
+num_iterations = st.slider("How many expert iterations?", min_value=1, max_value=5, value=3)
+
+def pick_best(responses):
+    # Example: pick longest, but refine as needed
+    return max(responses, key=lambda t: len(t))
+
 if st.button("Generate Interview Context"):
     if user_topic:
-        with st.spinner("Consulting the Principal Architect..."):
+        with st.spinner("Consulting multiple Principal Architects..."):
             try:
-                # Initialize model with the System Instruction
                 model = genai.GenerativeModel(
                     model_name='gemini-2.5-flash',
                     system_instruction=system_instruction
                 )
-                
-                # Send the specific topic to the specialized model
-                response = model.generate_content(user_topic)
-                
-                st.success("Expert Analysis Generated:")
-                st.markdown(response.text)
+                all_outputs = []
+                for i in range(num_iterations):
+                    response = model.generate_content(user_topic)
+                    all_outputs.append(response.text)
+                best_output = pick_best(all_outputs)
+                st.success("Best Expert Analysis Generated:")
+                st.markdown(best_output)
             except Exception as e:
                 st.error(f"An error occurred: {e}")
     else:
         st.warning("Please enter a concept topic first!")
-
