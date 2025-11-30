@@ -3,7 +3,7 @@ import google.generativeai as genai
 
 # Page configuration
 
-st.title("🤖 Interview Prep Guide: Embedded Systems (Experienced proffessionals)")
+st.title("🤖 Interview Guide: Embedded Systems (Senior Professionals)")
 st.caption(f"Developed by [Madhu Hegde] {chr(0x00A9)} 2025")
 st.markdown("""
 This app acts as a **Technical Interviewer** from a top semiconductor company. 
