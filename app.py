@@ -7,17 +7,17 @@ import google.generativeai as genai
 # 'font-size' adjusts the size to make it fit.
 st.markdown("""
     <h1 style='text-align: center; font-size: 36px; white-space: nowrap;'>
-        🤖 Interview Guide: Embedded Systems (Senior Professionals)
+        🤖 Guide: Embedded Systems (Senior Professionals)
     </h1>
     """, unsafe_allow_html=True)
 st.caption(f"Developed by Madhu Hegde {chr(0x00A9)} 2025")
 st.markdown("""
-This app acts as a **Technical Interviewer** from a top semiconductor company. 
+This app acts as a **Technical Expert** from a top semiconductor company. 
 
-It generates advanced description, architectural patterns, and nuances for experienced engineers (typically **15+ years**, e.g., Principal/Staff Engineers).
+It generates advanced description, architectural patterns, and nuances for experienced Senior Professionals.
 
 **Key Sections:**
-1. Connections to design patterns & System design questions
+1. Connections to design patterns & System design problems associated
 2. Adavnced description typically for senior professionals 
 3. Code snippets and examples from top RTOS & Linux
 4. Content derived only from authentic books and interviews
@@ -77,7 +77,7 @@ def pick_best(responses):
     # Example: pick longest, but refine as needed
     return max(responses, key=lambda t: len(t))
 
-if st.button("Generate Interview Context"):
+if st.button("Generate Comments"):
     if user_topic:
         with st.spinner("Consulting multiple Principal Architects..."):
             try:
