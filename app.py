@@ -7,14 +7,12 @@ import google.generativeai as genai
 # 'font-size' adjusts the size to make it fit.
 st.markdown("""
     <h1 style='text-align: center; font-size: 36px; white-space: nowrap;'>
-        🤖 Guide: Embedded Systems (Senior Professionals)
+        🤖 Embedded Systems Guide for Senior Professionals
     </h1>
     """, unsafe_allow_html=True)
 st.caption(f"Developed by Madhu Hegde {chr(0x00A9)} 2025")
 st.markdown("""
-This app acts as a **Technical Expert** from a top semiconductor company. 
-
-It generates advanced description, architectural patterns, and nuances for experienced Senior Professionals.
+This app acts as a **Technical Expert** and generates advanced description, architectural patterns and nuances for experienced Senior Professionals.
 
 **Key Sections:**
 1. Connections to design patterns & System design problems associated
