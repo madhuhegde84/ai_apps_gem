@@ -45,7 +45,7 @@ Output Format (Strictly follow these headers):
 1. **Brief Concept Introduction**
    - Keep this under 100 words. Simple and concise.
 
-2. **Concept for 15+ Years Experienced Professional**
+2. **Concept for Experienced Professional**
    - High complexity. Discuss nuances like cache coherency, pipeline hazards, atomic operations, or kernel-level locking mechanisms related to the topic.
 
 3. **Code Snippet**
